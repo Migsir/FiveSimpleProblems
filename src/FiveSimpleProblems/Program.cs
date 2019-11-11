@@ -13,6 +13,9 @@ namespace FiveSimpleProblems
             Console.WriteLine($"Sum using While-Loop: {sumProblem.SumUsingWhile() }");
             Console.WriteLine($"Sum using Recursive : {sumProblem.SumRecursive () }");
             sumProblem.PrintFooter();
+
+            var fibonacci = new Fibonacci(20);
+            fibonacci.FibonacciIteration();
         }
 
     }
