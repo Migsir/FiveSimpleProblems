@@ -4,7 +4,7 @@ using System.Text;
 
 namespace FiveSimpleProblems
 {
-    public class Fibonacci
+    public class Fibonacci : BaseClass
     {
 
         public int HowManyIterations { get;}

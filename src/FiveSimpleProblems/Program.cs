@@ -7,7 +7,7 @@ namespace FiveSimpleProblems
         static void Main(string[] args)
         {
             var sumProblem = new FirstProblemSumNumbers();
-            sumProblem.PrintTitle("First Problem");
+            sumProblem.PrintTitle("First Problem Sumatory");
             sumProblem.NumbersToSum = new int[] { 1, 2, 3, 4, 5 };
             Console.WriteLine($"Sum using For-Loop  : {sumProblem.SumUsingFor  () }");
             Console.WriteLine($"Sum using While-Loop: {sumProblem.SumUsingWhile() }");
@@ -15,7 +15,9 @@ namespace FiveSimpleProblems
             sumProblem.PrintFooter();
 
             var fibonacci = new Fibonacci(20);
+            fibonacci.PrintTitle("Third Fibonacci Secuence");
             fibonacci.FibonacciIteration();
+            fibonacci.PrintFooter();
         }
 
     }

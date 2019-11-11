@@ -25,6 +25,7 @@ namespace FiveSimpleProblems
 
         public void PrintFooter() 
         {
+            Console.WriteLine("");
             Console.WriteLine("------------------------------");
         }
 
