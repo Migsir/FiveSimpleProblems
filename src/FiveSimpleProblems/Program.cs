@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace FiveSimpleProblems
 {
@@ -18,6 +19,9 @@ namespace FiveSimpleProblems
             fibonacci.PrintTitle("Third Fibonacci Secuence");
             fibonacci.FibonacciIteration();
             fibonacci.PrintFooter();
+
+            var numbers = new CreateMaxNumber(new List<int>(){100,8,95,5,9});
+            var maxNumbers = numbers.GetMaxNumber();
         }
 
     }
