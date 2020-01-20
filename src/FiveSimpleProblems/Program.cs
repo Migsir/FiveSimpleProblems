@@ -21,7 +21,10 @@ namespace FiveSimpleProblems
             fibonacci.PrintFooter();
 
             var numbers = new CreateMaxNumber(new List<int>(){100,8,95,5,9});
-            var maxNumbers = numbers.GetMaxNumber();
+            var maxNumber = numbers.GetMaxNumber();
+            numbers.PrintTitle("Create Max Number from an Integer list");
+            Console.WriteLine($"Max Number created:{maxNumber}");
+            numbers.PrintFooter();
         }
 
     }

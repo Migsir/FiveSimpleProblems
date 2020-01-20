@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace FiveSimpleProblems
 {
-    public class CreateMaxNumber
+    public class CreateMaxNumber : BaseClass
     {
         public List<int> Numbers { get; set; }
         public CreateMaxNumber(List<int> numbers) 
@@ -25,7 +25,8 @@ namespace FiveSimpleProblems
             var numberStringList = Numbers.Select( i => i.ToString()).OrderByDescending( x => x).ToList();
             var stringData = String.Join("",numberStringList.ToArray());
             if (!int.TryParse(stringData, out maxNumber))
-            { 
+            {
+                throw new Exception("The number created is not an integer.");
             }
             return maxNumber;
         }
